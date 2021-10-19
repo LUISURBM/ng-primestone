@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "f7ecd598-3b98-422f-b0e3-75ccd833a2d1"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -37,6 +40,8 @@
           },
           "configurations": {
             "production": {
+              "aot": true,
+              
               "budgets": [
                 {
                   "type": "initial",
@@ -102,6 +107,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "ng-primestone:build:production",
+            "firebaseProject": "primestone",
+            "firebaseHostingSite": "primestone"
           }
         }
       }

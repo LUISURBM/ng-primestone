@@ -1,0 +1,36 @@
+<p>Información de la tarea!</p>
+<form [formGroup]="form" class="container">
+    
+  <label for="task_id" >Id: </label>
+  <input id="task_id" type="number" formControlName="task_id">
+    
+  <label for="task_status">Status: </label>
+  <input id="task_status" type="text" formControlName="task_status">
+    
+  <label for="task_summary">Summary: </label>
+  <input id="task_summary" type="text" formControlName="task_summary">
+    
+  <label for="task_type">Type: </label>
+  <input id="task_type" type="text" formControlName="task_type">
+    
+  <label for="task_priority">Priority: </label>
+  <input id="task_priority" type="text" formControlName="task_priority">
+    
+  <label for="task_tags">Tags: </label>
+  <input id="task_tags" type="text" formControlName="task_tags">
+    
+  <label for="task_estimate">Estimate: </label>
+  <input id="task_estimate" type="number" formControlName="task_estimate">
+    
+  <label for="task_assignee">Assignee: </label>
+  <input id="task_assignee" type="text" formControlName="task_assignee">
+    
+  <label for="task_rankId">Rank: </label>
+  <input id="task_rankId" type="number" formControlName="task_rank">
+
+</form>
+<br/>
+<button (click)="agregar()">Agregar</button>
+<br/>
+<br/>
+<button routerLink="/">Cancelar</button>

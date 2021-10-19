@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "primestone": {
+      "hosting": {
+        "ng-primestone": [
+          "primestone"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "primestone"
+  }
+}
